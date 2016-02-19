@@ -25,14 +25,14 @@ public class AopConfiguration {
 	}
 	
 	@AfterThrowing(pointcut="execution(* com.iocean.employee.repository.EmployeeFactoryRepository.*(..))",
-					throwing="EmployeeNotFoundException")
-	public void logEmployeeNotFound(){
+					throwing="ex")
+	public void logEmployeeNotFound(EmployeeNotFoundException ex){
 		System.out.println("Employee Not foud !!!!!!!");
 	}
 	
-	@Around("@annotation(com.iocean.MyTransactional)")
-	public void logAnnotedMethod(ProceedingJoinPoint pjoinPoint) throws Throwable{
-		System.out.println("Mode de propagation : " + pjoinPoint.);
+	@Around("@annotation(myTransactional)")
+	public void logAnnotedMethod(ProceedingJoinPoint pjoinPoint, MyTransactional myTransactional) throws Throwable{
+		System.out.println("Mode de propagation : " + myTransactional.propagation());
 		pjoinPoint.proceed();
 		System.out.println("commit de la transaction");
 		

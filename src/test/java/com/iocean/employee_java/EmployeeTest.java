@@ -15,7 +15,6 @@ import com.iocean.App;
 import com.iocean.company.service.CompanyService;
 import com.iocean.employee.factory.EmployeeFactory;
 import com.iocean.employee.model.Employee;
-import com.iocean.employee.service.EmployeeFactoryService;
 import com.iocean.employee.service.EmployeeService;
 
 public class EmployeeTest {

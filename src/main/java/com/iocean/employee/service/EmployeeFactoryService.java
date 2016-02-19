@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.iocean.employee.model.Employee;
 import com.iocean.employee.repository.EmployeeRepository;
 
-@Service
+//@Service
 public class EmployeeFactoryService implements EmployeeService {
 
 	private EmployeeRepository employeRepository;

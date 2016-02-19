@@ -15,7 +15,7 @@ import com.iocean.MyTransactional;
 import com.iocean.employee.factory.EmployeeFactory;
 import com.iocean.employee.model.Employee;
 
-@Repository
+//@Repository
 //@Scope(value = "prototype", proxyMode = ScopedProxyMode.TARGET_CLASS)
 public class EmployeeFactoryRepository implements EmployeeRepository{
 
