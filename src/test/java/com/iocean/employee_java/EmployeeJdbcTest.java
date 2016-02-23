@@ -28,8 +28,7 @@ public class EmployeeJdbcTest{
 		context = new AnnotationConfigApplicationContext(App.class);
 		companyService = (CompanyService)context.getBean(CompanyService.class);
 		employeeJdbcService = (EmployeeService)context.getBean(EmployeeService.class);
-		//employeeJdbcService.droptable();
-		//employeeJdbcService.createTable();
+		
 	}
 	
 	@Test
